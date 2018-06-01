@@ -1,9 +1,9 @@
 buildscript {
     ext {
-        kotlinVersion = "1.2.31"
+        kotlinVersion = "1.2.41"
         junitPlatformVersion = "1.0.0"
         spekVersion = "1.1.5"
-        joobyVersion = "1.3.0"
+        joobyVersion = "1.4.0"
     }
 
     repositories {
