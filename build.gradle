@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlinVersion = "1.2.41"
+        kotlinVersion = "1.2.50"
         junitPlatformVersion = "1.0.0"
         spekVersion = "1.1.5"
         joobyVersion = "1.4.0"
@@ -34,16 +34,18 @@ apply plugin: "application"
 apply plugin: "jooby"
 apply plugin: "org.junit.platform.gradle.plugin"
 
-group "starter.kotlin"
-version "1.0"
+//group "starter.kotlin"
+//version "1.0"
+
 // Startup class:
 mainClassName = "starter.kotlin.AppKt"
-sourceCompatibility = 1.8
+sourceCompatibility = JavaVersion.VERSION_1_8 // 1.8
+targetCompatibility = JavaVersion.VERSION_1_8
 
-task wrapper(type: Wrapper) {
-    gradleVersion = "4.6"
-    distributionType = org.gradle.api.tasks.wrapper.Wrapper.DistributionType.ALL
-}
+//task wrapper(type: Wrapper) {
+//    gradleVersion = "4.6"
+//    distributionType = org.gradle.api.tasks.wrapper.Wrapper.DistributionType.ALL
+//}
 
 dependencyManagement {
     imports {
